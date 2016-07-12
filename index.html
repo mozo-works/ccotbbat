@@ -16,15 +16,16 @@ layout: default
 
 <div class="jumbotron bg-primary">
   <div class="container">
-    <h2>교육 과정</h2>
+    <h2><a href="/courses/" class="text-info">교육 과정</a></h2>
     <div class="row">
       {% assign courses = site.courses | sort:"wid" | reverse  %}
-      {% for course in courses %}
+      {% for course in courses limit:3 %}
+      <!-- <pre>{{ course | inspect }}</pre> -->
       <div class="col-md-4">
-        <a href="{{ course.id }}"><img class="card-img-top img-fluid" src="http://placehold.it/400x225" alt="Card image cap"></a>
-        <h4><a href="{{ course.id }}" class="text-info">{{ course.title }}</a></h4>
+        <a href="{{ course.url }}"><img class="img-responsive" src="http://placehold.it/400x225" alt=""></a>
+        <h4><a href="{{ course.url }}" class="text-info">{{ course.title }}</a></h4>
         <p class="card-text">{{ course.description }}</p>
-        <a href="{{ course.id }}" class="btn btn-info">더 알아보기</a>
+        <a href="{{ course.url }}" class="btn btn-info">더 알아보기</a>
       </div>
       {% endfor %}
     </div>
