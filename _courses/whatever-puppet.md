@@ -1,5 +1,5 @@
 ---
-course_id: 2
+course_id: 1
 slug: whatever
 title: 아무거나 줄인형 공연과 극놀이
 catchphrase: 손끝에서 피어나는 생명!

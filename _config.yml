@@ -28,6 +28,10 @@ collections:
   courses:
     output: true
     permalink: /course/:path/
+  works:
+    output: true
+    permalink: /work/:path/
+
 
 defaults:
   -
@@ -35,3 +39,8 @@ defaults:
       path: _courses
     values:
       layout: course
+  -
+    scope:
+      path: _works
+    values:
+      layout: work

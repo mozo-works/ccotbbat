@@ -1,5 +1,5 @@
 ---
-course_id: 3
+course_id: 2
 slug: shadow
 title: 조각그림자 공연과 극놀이
 catchphrase: 그림자들의 환생!

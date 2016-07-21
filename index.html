@@ -2,10 +2,10 @@
 layout: default
 ---
 
-<div class="jumbotron">
+<div class="jumbotron" style="background: url(/assets/logo/main1.jpg) no-repeat; background-size: cover; filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/assets/logo/main1.jpg', sizingMethod='scale');">
   <div class="container">
-    <h1 class="display-6">체험예술공간 꽃밭!</h1>
-    <h2 class="display-7">체험 자체가 예술!</h2>
+    <h1 class="display-6"><span class="bg-success">체험예술공간 꽃밭!</span></h1>
+    <h2 class="display-7"><span class="bg-success">체험 자체가 예술!</span></h2>
     <p class="lead">
       꽃을 심고 꽃밭을 가꾸는 사람들과<br>
       그 꽃밭에서 뛰노는 사람들이<br>
@@ -16,15 +16,33 @@ layout: default
 
 <div class="jumbotron bg-primary">
   <div class="container">
-    <h2><a href="/courses/" class="text-info">교육 과정</a></h2>
+    <h2><a href="/courses/" class="text-info">프로그램</a></h2>
     <div class="row">
-      {% assign courses = site.courses | sort:"wid" | reverse  %}
+      {% assign courses = site.courses | sort:"course_id" | reverse  %}
       {% for course in courses limit:3 %}
       <!-- <pre>{{ course | inspect }}</pre> -->
       <div class="col-md-4">
         <a href="{{ course.url }}"><img class="img-responsive" src="http://placehold.it/400x225" alt=""></a>
         <h4><a href="{{ course.url }}" class="text-info">{{ course.title }}</a></h4>
         <p class="card-text">{{ course.description }}</p>
+        <a href="{{ course.url }}" class="btn btn-info">더 알아보기</a>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</div>
+
+<div class="jumbotron bg-info">
+  <div class="container">
+    <h2 class="text-info">작품</h2>
+    <div class="row">
+      {% assign works = site.works | sort:"wid" | reverse  %}
+      {% for work in works limit:3 %}
+      <!-- <pre>{{ work | inspect }}</pre> -->
+      <div class="col-md-6">
+        <a href="{{ work.url }}"><img class="img-responsive" src="http://placehold.it/400x225" alt=""></a>
+        <h4><a href="{{ work.url }}" class="text-info">{{ work.title }}</a></h4>
+        <p class="card-text">{{ work.description }}</p>
         <a href="{{ course.url }}" class="btn btn-info">더 알아보기</a>
       </div>
       {% endfor %}
