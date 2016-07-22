@@ -10,7 +10,7 @@ instructors: 이철성
 space: 
 materials: 
 results: 
-featured_image:
+featured_image: IMG20198.jpg
 videos:
 promos:
 docs:

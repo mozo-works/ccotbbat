@@ -11,7 +11,7 @@ music : 이정훈
 music_director : 한윤미 
 administration : 장지영
 slug: desk-of-giant
-featured_image:
+featured_image: poster3.jpg
 videos:
   https://www.youtube.com/watch?v=4TbH87Q0xX4
 promos:

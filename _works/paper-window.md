@@ -8,7 +8,7 @@ creator: 이철성
 performer: 이철성, 심은정
 r_time: 60분 (공연 40분 + 체험공연 20분)
 images: window
-featured_image:
+featured_image: IMG_6259.jpg
 videos:
   https://www.youtube.com/watch?v=5uqBjxJFNXA
   https://www.youtube.com/watch?v=U7J1j9fpPR4

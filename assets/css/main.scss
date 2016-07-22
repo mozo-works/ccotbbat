@@ -2,6 +2,7 @@
 ---
 @import "variables";
 @import "bootstrap/bootstrap";
+// @import "courses";
 
 .navbar {
   margin: 0;
@@ -16,3 +17,43 @@
     margin-bottom: $line-height-computed;
   }
 }
+
+.course .sidebar-module,
+.work .sidebar-module {
+  padding: 1em;
+}
+
+/**
+ * course detail
+ */
+
+// cover image for course header
+{% for course in site.courses %}
+  {% if course.featured_image %}
+.{{ course.slug }} .course-header {
+  background: url('/assets/courses/{{ course.slug }}/photo/{{ course.featured_image }}') no-repeat;
+  background-size: cover;
+}
+  {% endif %}
+{% endfor %}
+
+.course {
+  .course-hedader {
+
+  }
+}
+
+
+/**
+ * work detail
+ */
+
+// cover image for work header
+{% for work in site.works %}
+  {% if work.featured_image %}
+.{{ work.slug }} .work-header {
+  background: url('/assets/works/{{ work.slug }}/photo/{{ work.featured_image }}') no-repeat;
+  background-size: cover;
+}
+  {% endif %}
+{% endfor %}

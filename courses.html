@@ -14,7 +14,7 @@ layout: default
     {% assign courses = site.courses | sort:"course_id" | reverse  %}
     {% for course in courses %}
     <div class="col-md-4">
-      <a href="{{ course.url }}"><img class="img-responsive" src="http://placehold.it/400x225" alt=""></a>
+      <a href="{{ course.url }}"><img class="img-responsive" src="/assets/courses/{{ course.slug }}/photo/{{ course.featured_image }}" alt=""></a>
       <h4><a href="{{ course.url }}" class="text-info">{{ course.title }}</a></h4>
       <p class="card-text">{{ course.description }}</p>
       <a href="{{ course.url }}" class="btn btn-info">더 알아보기</a>
@@ -22,10 +22,3 @@ layout: default
     {% endfor %}
   </div>
 </div>
-
-<ul>
-{% assign courses = site.courses | sort:"course_id" %}
-{% for  course in courses %}
-    <li>{{ course.slug }}</li>
-{% endfor%}
-</ul>

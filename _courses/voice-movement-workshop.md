@@ -10,7 +10,7 @@ instructors: 김진영 - 보이스씨어터 ‘몸MOM소리’ 대표
 space: 모두가 두 팔을 벌려 서거나 누울 수 있는 공간
 materials: 편한 복장과 마음
 results: 
-featured_image:
+featured_image: large.jpg
 videos:
 promos:
 docs:

@@ -2,9 +2,10 @@
 layout: default
 ---
 
-<div class="jumbotron">
+<div class="jumbotron work-header">
   <div class="container">
-    <h1 class="display-6">{{ page.title }}</h1>
+    <h1><span class="bg-success">{{ page.title }}</span></h1>
+    <p class="lead"><span class="bg-info">{{ page.catchphrase }}</span></p>
   </div>
 </div>
 
@@ -23,12 +24,12 @@ layout: default
       {% endif %}
 
       {% assign file_pathes =  site.static_files | map: 'path' | join: ', ' %}
-      {% assign course_image_directory = '/assets/images/courses/' | append: page.img %}
-      {% if file_pathes contains course_image_directory %}
+      {% assign work_image_directory = '/assets/works/' | append: page.slug | 'photo' %}
+      {% if file_pathes contains work_image_directory %}
       <h2 class="m-t-2">사진</h2>
       {% for file in site.static_files %}
-        {% if file.path contains course_image_directory %}
-        <p class="m-y-2"><img src="{{ file.path }}" alt="" class="img-fluid center-block" /></p>
+        {% if file.path contains work_image_directory %}
+        <p class="m-y-2"><img src="{{ file.path }}" alt="" class="img-responsive center-block" /></p>
         {% endif %}
       {% endfor %}
       {% endif %}

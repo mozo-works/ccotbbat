@@ -10,7 +10,7 @@ instructors: 이철성, 허재형 외
 space: 
 materials: 디지털 비디오 카메라, 빔프로젝터, 흰 천 등의 영상장비 / 회화, 데생 재료 등
 results: 
-featured_image:
+featured_image: IMG7270.jpg
 videos:
 promos:
 docs:
