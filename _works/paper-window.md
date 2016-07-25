@@ -10,8 +10,8 @@ r_time: 60분 (공연 40분 + 체험공연 20분)
 images: window
 featured_image: IMG_6259.jpg
 videos:
-  https://www.youtube.com/watch?v=5uqBjxJFNXA
-  https://www.youtube.com/watch?v=U7J1j9fpPR4
+  - 5uqBjxJFNXA
+  - U7J1j9fpPR4
 promos:
 docs:
 ---

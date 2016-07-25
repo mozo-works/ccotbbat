@@ -16,7 +16,7 @@ layout: default
 
       {% if page.videos.size > 0 %}
       <h2 class="m-t-2">영상</h2>
-      {% for item in page.video %}
+      {% for item in page.videos %}
       <div class="embed-responsive embed-responsive-16by9 m-t-2">
         <iframe class="embed-responsive-item" src="//www.youtube.com/embed/{{ item }}" allowfullscreen></iframe>
       </div>
@@ -43,9 +43,11 @@ layout: default
           {% if page.creator %}<li>창작자: {{ page.creator }}</li>{% endif %}
           {% if page.performer %}<li>공연자: {{ page.performer }}</li>{% endif %}
           {% if page.music %}<li>음악: {{ page.music }}</li>{% endif %}
+          {% if page.music_director %}<li>음악 감독: {{ page.music_director }}</li>{% endif %}
           {% if page.installation %}<li>설치: {{ page.installation }}</li>{% endif %}
           {% if page.assistant_director %}<li>조연출: {{ page.assistant_director }}</li>{% endif %}
-          {% if page.r_time %}<li>소요시간 : {{ page.r_time }} 분</li>{% endif %}
+          {% if page.administration %}<li>기획: {{ page.administration }}</li>{% endif %}
+          {% if page.r_time %}<li>소요시간 : {{ page.r_time }}</li>{% endif %}
           {% if page.objet %}<li>주재료 : {{ page.objet }}</li>{% endif %}
           {% if page.doc %}<li><p><a href="{{ page.doc }}" class="btn btn-info"><i class="fa fa-download" aria-hidden="true"></i> 공연소개서</a></p></li>{% endif %}
         </ol>
