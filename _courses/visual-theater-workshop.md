@@ -10,7 +10,7 @@ instructors: 이철성
 space: 
 materials: 
 results: 
-featured_image:
+featured_image: IMG18582.jpg
 videos:
 promos:
 docs:
@@ -26,8 +26,9 @@ docs:
 
 시각예술(Visual Arts)과 공연예술(Performing Arts)의 동시대적 만남인 ‘비주얼 씨어터(Visual Theater)’를 이해하고 직접 그 창작방법을 체험해 보는 체험 워크숍 프로그램이다. 비주얼 씨어터는 연극대본이 아닌 예술재료의 실험으로부터 작품을 창작한다는 점에서 시각예술과 같은 창작과정을 거친다. 또한 재료가 작품의 구조나 주제의 성립에 큰 영향력을 행사한다는 점에서 재료극(Material Theater)이라 지칭될 수 있다. 비주얼 씨어터가 다루는 재료는 몸, 공간, 소리, 오브제, 영상, 그림, 조각 등 시각예술과 공연예술, 그리고 여타의 모든 예술적 재료들을 포괄한다. 이번 워크숍에서는 몸, 공간, 오브제, 영상, 네 가지 재료를 실험하여 작품을 창작하는 과정을 체험한다.
 
-관련 이미지: 
+
 세부내용: 
+
 1. 비주얼 씨어터의 이해
 Interdicsiplinary theater, visual theater, material theater, physical theater, media theater 등의 개념을 통해 동시대의 공연예술적 현상을 이해하고 비주얼 씨어터를 이해한다. 관련된 공연작품을 감상한다.
 

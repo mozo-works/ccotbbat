@@ -14,6 +14,27 @@ layout: default
     <div class="col-sm-8 content">
       {{ content }}
 
+      {% for csv in site.data.tables %}
+        {% if csv[0] == page.slug %}
+          <table class="table">
+            <thead>
+              {% for row in csv[1].first %}
+              <th>{{ row[0] }}</th>
+              {% endfor %}
+            </thead>
+            <tbody>
+              {% for row in csv[1] %}
+              <tr>
+                {% for field in row %}
+                <td>{{ field[1] }}</td>
+                {% endfor %}
+              </tr>
+              {% endfor %}
+            </tbody>
+          </table>
+        {% endif %}
+      {% endfor %}
+
       {% if page.videos.size > 0 %}
       <h2 class="m-t-2">영상</h2>
       {% for item in page.video %}
