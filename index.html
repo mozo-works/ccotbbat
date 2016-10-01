@@ -3,14 +3,22 @@ layout: default
 ---
 
 <div class="jumbotron" style="background: url(/assets/global/main1.jpg) no-repeat; background-size: cover; filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/assets/global/main1.jpg', sizingMethod='scale');">
-  <div class="container">
-    <h1 class="display-6"><span class="bg-success">체험예술공간 꽃밭!</span></h1>
-    <h2 class="display-7"><span class="bg-success">체험 자체가 예술!</span></h2>
+  <div class="container"{% if site.data.front.banner.link %} onclick="location.href='{{ site.data.front.banner.link }}'"{% endif %}>
+    {% if site.data.front.banner.title %}
+    <h1 class="display-4"><span class="bg-warning text-warning">{{ site.data.front.banner.title }}</span></h1>
+    {% endif %}
+    <ul class="list-unstyled">
+      {% if site.data.front.banner.when %}<li><span class="bg-warning text-warning lead">{{ site.data.front.banner.when }}</span></li>{% endif %}
+      {% if site.data.front.banner.where %}<li><span class="bg-warning text-warning lead">{{ site.data.front.banner.where }}</span></li>{% endif %}
+    </ul>
+    {% if site.data.front.banner.description %}
+    <p>{{ site.data.front.banner.description }}</p>
+    {% endif %}
+    {% if site.data.front.banner.ticket %}
     <p class="lead">
-      꽃을 심고 꽃밭을 가꾸는 사람들과<br>
-      그 꽃밭에서 뛰노는 사람들이<br>
-      함께 만들어가는 체험예술공동체!
+      <a class="btn btn-success btn-lg" href="{{ site.data.front.en.banner.ticket }}" role="button">예매하기</a>
     </p>
+    {% endif %}
   </div>
 </div>
 
@@ -55,7 +63,7 @@ layout: default
     <div class="row">
       <div class="col-sm-6">
         <p class="lead">
-          <체험예술공간 꽃밭&gt;은 아동, 청소년과 가족을 대상으로 미술·연극 통합형 공연과 전시 교육프로그램을 진행하는 전문예술집단입니다. 미술적 재료(미디어아트, 회화, 조각 등)가 공연적 재료(몸, 오브제, 라이브음악 등)와 만나 공연이 펼쳐지고, 체험전시 놀이터가 펼쳐지고, 살아 뛰노는 교육(공연형 교육, 전시형 교육)이 이루어집니다.
+          {{ site.data.front.introduction }}
         </p>
         <p class="lead">
           <꽃밭&gt;의 프로그램들은 공연장, 미술관, 박물관, 대안공간, 야외 등 모든 공간을 예술적 향기로 가득 채워왔습니다. <꽃밭&gt;은 예술을 단지 체험하고 끝나는 것이 아니라 체험 자체가 예술이 되는 과정을 온몸으로 겪는 “체험예술”을 지향합니다.

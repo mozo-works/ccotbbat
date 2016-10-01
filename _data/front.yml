@@ -1,0 +1,28 @@
+---
+# front page
+
+introduction: |
+  <체험예술공간 꽃밭>은 아동, 청소년과 가족을 대상으로 미술·연극 통합형 공연과 전시 교육프로그램을 진행하는 전문예술집단입니다. 미술적 재료(미디어아트, 회화, 조각 등)가 공연적 재료(몸, 오브제, 라이브음악 등)와 만나 공연이 펼쳐지고, 체험전시 놀이터가 펼쳐지고, 살아 뛰노는 교육(공연형 교육, 전시형 교육)이 이루어집니다.
+
+banner:
+  title: 공연 ‘마사지사’
+  when: 2016년 9월 9~11일 11시
+  where: 스페인 피라타레가 유로파 광장
+  description:
+  bg-image: 20160831/IMG_9887.jpeg
+  link: https://www.facebook.com/visualtheaterccot/posts/655738851242536
+  long-image:
+  ticket:
+
+en:
+  introduction: |
+    
+  banner:
+    title: 'Massager'
+    when: 11am, 9~11th Sep. 2016
+    where: Placa d'Europa, Fira Tarrega in Spain
+    description:
+    bg-image: 20160831/IMG_9887.jpeg
+    link: https://www.facebook.com/visualtheaterccot/posts/655864801229941
+    long-image:
+    ticket:
