@@ -24,7 +24,7 @@ layout: default
 
 <div class="jumbotron bg-primary">
   <div class="container">
-    <h2><a href="/courses/" class="text-info">프로그램</a></h2>
+    <h2><a href="/courses/" class="text-success">체험 프로그램</a></h2>
     <div class="row">
       {% assign courses = site.courses | sort:"course_id" | reverse  %}
       {% for course in courses limit:3 %}
@@ -63,10 +63,7 @@ layout: default
     <div class="row">
       <div class="col-sm-6">
         <p class="lead">
-          {{ site.data.front.introduction }}
-        </p>
-        <p class="lead">
-          <꽃밭&gt;의 프로그램들은 공연장, 미술관, 박물관, 대안공간, 야외 등 모든 공간을 예술적 향기로 가득 채워왔습니다. <꽃밭&gt;은 예술을 단지 체험하고 끝나는 것이 아니라 체험 자체가 예술이 되는 과정을 온몸으로 겪는 “체험예술”을 지향합니다.
+          {{ site.data.front.introduction | escape }}
         </p>
         <ul id="download" class="list-inline">
           <li class="list-inline-item"><a class="btn btn-lg btn-info" href="/assets/files/introduction.zip"><i class="fa fa-download" aria-hidden="true"></i> 프로그램북</a></li>
@@ -78,16 +75,8 @@ layout: default
           <li><a href="http://voicetheater.net" target="_blank"><img src="/assets/global/momsori.gif" alt="몸소리" style="height: 70px;"></a></li>
         </ul>
       </div>
-      <div class="col-sm-6">
-        <p class="lead">
-          <꽃밭&gt;은 다년간 아동청소년 교육과 공연에 힘써온 <비주얼씨어터컴퍼니 꽃>의 아동청소년프로그램이 독립되어서 만들어진 단체입니다. 또한 <꽃밭&gt;은 전문가(예술가와 교사, 강사 등의 예술교육 매개자)를 위한 워크숍과 일반인을 위한 세라피(치유) 프로그램을 통해 예술인력 양성과 예술치유의 확산에 힘쓰고 있습니다.
-        <p>
-        <p class="lead">
-          <꽃밭&gt;은 체험예술을 통해서 일상의 공간이 예술적 공간으로 변하고, 이 세상의 모든 하찮은 것들이 우리의 친구가 되고, 그로 인해서 삶이 더욱 풍요롭고 소중하게 변화되기를 바랍니다.
-        </p>
-        <p class="lead">
-          <꽃밭&gt;의 공연들은 유럽, 아시아, 아프리카의 주요 페스티벌에 공식초청되어 다양한 상을 수상하는 등 큰 주목을 받았고, 한국과 한국예술을 세계에 알리는데 앞장서고 있습니다.
-        </p>
+      <div class="col-sm-6 lead">
+        {{ site.data.front.history | escape | markdownify }}
       </div>
     </div>
   </div>
