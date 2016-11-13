@@ -1,0 +1,17 @@
+<div class="bg-success">
+  <nav class="navbar">
+    <div class="container">
+      <a class="navbar-brand text-success pull-left" href="/en/">{{ site.en.name }}</a>
+      <a class="pull-left" href="/"><small class="label label-default">한국어</small></a>
+      {% if site.data.menu_en %}
+      <ul class="nav navbar-nav navbar-right">
+        {% for item in site.data.menu_en %}
+        <li class="nav-item{% if page.url == item.url %} active{% endif %}">
+          <a class="nav-link text-success" href="/en{{ item.url }}">{{ item.title | capitalize }}{% if page.url == item.url %} <span class="sr-only">(current)</span>{% endif %}</a>
+        </li>
+        {% endfor %}
+      </ul>
+      {% endif %}
+    </div>
+  </nav>
+</div>

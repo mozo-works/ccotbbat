@@ -3,13 +3,8 @@ layout: default
 
 ---
 
-<div class="jumbotron">
-  <div class="container">
-    <h1 class="display-4">프로그램</h1>
-  </div>
-</div>
-
 <div class="container">
+  <h1 class="page-header">프로그램</h1>
   <div class="row">
     {% assign courses = site.courses | sort:"course_id" | reverse  %}
     {% for course in courses %}

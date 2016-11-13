@@ -1,5 +1,5 @@
 ---
-course_id: 1
+wid: 1
 title: 미디어드로잉 체험퍼포먼스 &lt;종이창문&gt;
 catchphrase: 그림 속으로 들어간 사람! 그 특별한 위트, 유쾌한 상상력과 만나라!
 category: 미술관/박물관 프로젝트, 아동-청소년-가족 (공연)
@@ -7,11 +7,12 @@ type: 공연
 creator: 이철성
 performer: 이철성, 심은정
 r_time: 60분 (공연 40분 + 체험공연 20분)
-images: window
-featured_image: IMG_6259.jpg
+slug: paper-window
+featured_image: /assets/works/paper-window/photo/IMG_6259.jpg
 videos:
   - 5uqBjxJFNXA
   - U7J1j9fpPR4
+  - xsUbTe3mMrY
 promos:
 docs:
 ---

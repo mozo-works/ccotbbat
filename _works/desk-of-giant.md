@@ -1,5 +1,5 @@
 ---
-course_id: 1
+wid: 2
 title: 미디어-오브제쇼 &lt;거인의 책상&gt;
 catchphrase: 알쏭달쏭 거인의 책상 위에 펼쳐진 이야기가 궁금하다?!
 category: 아동-청소년-가족 (공연)
@@ -11,7 +11,7 @@ music : 이정훈
 music_director : 한윤미 
 administration : 장지영
 slug: desk-of-giant
-featured_image: poster3.jpg
+featured_image: /assets/works/desk-of-giant/photo/poster3.jpg
 videos:
   4TbH87Q0xX4
 promos:

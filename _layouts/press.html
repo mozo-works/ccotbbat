@@ -3,18 +3,23 @@ layout: default
 ---
 
 <div class="container about">
-  <h1 class="page-header">{{ page.title }}</h1>
+  <h1 class="page-header">{{ page.title | escape | replace: ':', ':<br>' }}</h1>
   <div class="col-lg-8 about-content">
+    <p class="meta text-muted pull-right">
+       {{ page.reporter }} / {{ page.editors }} / {{ page.date | date: "%Y-%m-%d" }}
+    </p>
     {{ content }}
   </div>
   <div class="col-lg-3 col-lg-offset-1 about-sidebar">
     <div class="sidebar-module">
+      <h3>다른 기사들</h3>
       <ol class="list-unstyled">
-        {% for item in site.data.about-nav %}
+        {% for item in site.press %}
+        {% if page.title != item.title %}
         <li>
           <h4><a href="{{ item.url }}">{{ item.title }}</a></h4>
-          <p>{{ item.description | escape | markdownify }}</p>
         </li>
+        {% endif %}
         {% endfor %}
       </ol>
     </div>

@@ -1,0 +1,55 @@
+---
+layout: en/default
+---
+
+<div class="jumbotron work-header">
+  <div class="container">
+    <h1><span class="bg-success">{{ page.title }}</span></h1>
+    <p class="lead"><span class="bg-info">{{ page.catchphrase }}</span></p>
+  </div>
+</div>
+
+<div class="container">
+  <div class="row">
+    <div class="col-sm-8 content">
+      {{ content }}
+
+      {% if page.videos.size > 0 %}
+      {% for item in page.videos %}
+      <div class="embed-responsive embed-responsive-16by9 m-t-2">
+        <iframe class="embed-responsive-item" src="//www.youtube.com/embed/{{ item }}" allowfullscreen></iframe>
+      </div>
+      {% endfor %}
+      {% endif %}
+
+      {% assign file_pathes =  site.static_files | map: 'path' | join: ', ' %}
+      {% assign work_image_directory = '/assets/works/' | append: page.slug | 'photo' %}
+      {% if file_pathes contains work_image_directory %}
+      {% for file in site.static_files %}
+        {% if file.path contains work_image_directory %}
+        <p class="m-y-2"><img src="{{ file.path }}" alt="" class="img-responsive center-block" /></p>
+        {% endif %}
+      {% endfor %}
+      {% endif %}
+
+    </div>
+    <div class="col-sm-3 col-sm-offset-1 sidebar">
+      <div class="sidebar-module">
+        <ol id="work-meta" class="list-unstyled">
+          {% if page.c_year %}<li>creation: {{ page.c_year }}</li>{% endif %}
+          {% if page.type %}<li>type: {{ page.type }}</li>{% endif %}
+          {% if page.creator %}<li>creator: {{ page.creator }}</li>{% endif %}
+          {% if page.performer %}<li>performer: {{ page.performer }}</li>{% endif %}
+          {% if page.music %}<li>music: {{ page.music }}</li>{% endif %}
+          {% if page.music_director %}<li>music director: {{ page.music_director }}</li>{% endif %}
+          {% if page.installation %}<li>installation: {{ page.installation }}</li>{% endif %}
+          {% if page.assistant_director %}<li>assistant director: {{ page.assistant_director }}</li>{% endif %}
+          {% if page.administration %}<li>administration: {{ page.administration }}</li>{% endif %}
+          {% if page.r_time %}<li>duration : {{ page.r_time }}</li>{% endif %}
+          {% if page.objet %}<li>objet : {{ page.objet }}</li>{% endif %}
+          {% if page.doc %}<li><p><a href="{{ page.doc }}" class="btn btn-info"><i class="fa fa-download" aria-hidden="true"></i> introduction</a></p></li>{% endif %}
+        </ol>
+      </div>
+    </div>
+  </div>
+</div>

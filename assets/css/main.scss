@@ -4,6 +4,17 @@
 @import "bootstrap/bootstrap";
 // @import "courses";
 
+#footer {
+  margin-top: 12em;
+  .front & {
+    margin-top: 0;
+  }
+}
+
+p, li {
+  font-weight: 100;
+}
+
 .navbar {
   margin: 0;
 }
@@ -52,8 +63,19 @@
 {% for work in site.works %}
   {% if work.featured_image %}
 .{{ work.slug }} .work-header {
-  background: url('/assets/works/{{ work.slug }}/photo/{{ work.featured_image }}') no-repeat;
+  background: url('{{ work.featured_image }}') no-repeat;
   background-size: cover;
 }
   {% endif %}
 {% endfor %}
+
+
+.person {
+  margin-bottom: 3em;
+  h2 { margin-top: 0; }
+  ul { padding-left: 25px; }
+}
+
+.press {
+
+}

@@ -1,0 +1,65 @@
+---
+layout: en/default
+---
+
+<div class="jumbotron" style="background: url(/assets/global/main1.jpg) no-repeat; background-size: cover; filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/assets/global/main1.jpg', sizingMethod='scale');">
+  <div class="container"{% if site.data.front.en.banner.link %} onclick="location.href='{{ site.data.front.en.banner.link }}'"{% endif %}>
+    {% if site.data.front.en.banner.title %}
+    <h1 class="display-4"><span class="bg-warning text-warning">{{ site.data.front.en.banner.title }}</span></h1>
+    {% endif %}
+    <ul class="list-unstyled">
+      {% if site.data.front.en.banner.when %}<li><span class="bg-warning text-warning lead">{{ site.data.front.en.banner.when }}</span></li>{% endif %}
+      {% if site.data.front.en.banner.where %}<li><span class="bg-warning text-warning lead">{{ site.data.front.en.banner.where }}</span></li>{% endif %}
+    </ul>
+    {% if site.data.front.en.banner.description %}
+    <p>{{ site.data.front.en.banner.description }}</p>
+    {% endif %}
+    {% if site.data.front.en.banner.ticket %}
+    <p class="lead">
+      <a class="btn btn-success btn-lg" href="{{ site.data.front.en.en.banner.ticket }}" role="button">예매하기</a>
+    </p>
+    {% endif %}
+  </div>
+</div>
+
+<div class="jumbotron bg-info">
+  <div class="container">
+    <h2 class="text-info">Works</h2>
+    <div class="row">
+      {% assign works = site.en_works | sort:"wid" | reverse  %}
+      {% for work in works limit:3 %}
+      <div class="col-md-6">
+        <a href="{{ work.url }}"><img class="img-responsive" src="{{ work.featured_image }}" alt="{{ work.title }}"></a>
+        <h4><a href="{{ work.url }}" class="text-info">{{ work.title }}</a></h4>
+        <p class="card-text">{{ work.description }}</p>
+        <a href="{{ work.url }}" class="btn btn-info">more</a>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</div>
+
+
+<div class="jumbotron">
+  <div class="container">
+    <h2>About</h2>
+    <div class="row">
+      <div class="col-sm-6">
+        <p class="lead">
+          {{ site.data.front.en.introduction }}
+        </p>
+        <ul id="download" class="list-inline">
+          <li class="list-inline-item"><a class="btn btn-lg btn-info" href="/assets/global/profile-en.pdf"><i class="fa fa-download" aria-hidden="true"></i> Profile</a></li>
+        </ul>
+        <p>&nbsp;</p>
+        <ul class="list-inline">
+          <li><a href="http://visualtheater.kr" target="_blank"><img src="/assets/global/ccot.gif" alt="꽃"></a></li>
+          <li><a href="http://voicetheater.net" target="_blank"><img src="/assets/global/momsori.gif" alt="몸소리" style="height: 70px;"></a></li>
+        </ul>
+      </div>
+      <div class="col-sm-6 lead">
+        {{ site.data.front.en.history | escape | markdownify }}
+      </div>
+    </div>
+  </div>
+</div>
