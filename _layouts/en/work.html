@@ -36,17 +36,7 @@ layout: en/default
     <div class="col-sm-3 col-sm-offset-1 sidebar">
       <div class="sidebar-module">
         <ol id="work-meta" class="list-unstyled">
-          {% if page.c_year %}<li>creation: {{ page.c_year }}</li>{% endif %}
-          {% if page.type %}<li>type: {{ page.type }}</li>{% endif %}
-          {% if page.creator %}<li>creator: {{ page.creator }}</li>{% endif %}
-          {% if page.performer %}<li>performer: {{ page.performer }}</li>{% endif %}
-          {% if page.music %}<li>music: {{ page.music }}</li>{% endif %}
-          {% if page.music_director %}<li>music director: {{ page.music_director }}</li>{% endif %}
-          {% if page.installation %}<li>installation: {{ page.installation }}</li>{% endif %}
-          {% if page.assistant_director %}<li>assistant director: {{ page.assistant_director }}</li>{% endif %}
-          {% if page.administration %}<li>administration: {{ page.administration }}</li>{% endif %}
-          {% if page.r_time %}<li>duration : {{ page.r_time }}</li>{% endif %}
-          {% if page.objet %}<li>objet : {{ page.objet }}</li>{% endif %}
+          {{ page.meta | escape | markdownify }}
           {% if page.doc %}<li><p><a href="{{ page.doc }}" class="btn btn-info"><i class="fa fa-download" aria-hidden="true"></i> introduction</a></p></li>{% endif %}
         </ol>
       </div>
