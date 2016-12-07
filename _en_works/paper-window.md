@@ -2,14 +2,6 @@
 wid: 1
 title: Paper Window
 catchphrase: Live animation with interactive performance
-creator: Cheol-Sung Lee
-performer: Cheol-Sung Lee, Hye-Won Kim
-visual_director: Hye-Won Kim
-music: Soo-Kyeong Shin
-musci_director: Yun-Mi Han
-r_time: 60min (In the case of ‘Outdoor’, it can be shorter to 40min)
-age: All ages
-space : Theater, Gallery, Outdoor and alternative spaces.
 slug: paper-window
 featured_image: /assets/works/paper-window/photo/IMG_6259.jpg
 videos:
@@ -18,20 +10,29 @@ videos:
   - xsUbTe3mMrY
 promos:
 docs:
+meta: |
+  * Running time: 60min (In the case of ‘Outdoor’, it can be shorter to 40min)
+  * space : Theater, Gallery, Outdoor and alternative spaces.
+  * Audience: All ages
+  * Creator & Director : Cheol-Sung Lee
+  * Visual Director : Hye-Won Kim
+  * Music Design : Soo-Kyeong Shin
+  * Musical Director : Yun-Mi Han
+  * Performer : Cheol-Sung Lee, Hye-Won Kim
 ---
 
-## Award :
+### Award :
 
 - 2012 World Puppetry Congress(Chengdu in China) _ ‘Excellent Visual Effect’!
 - 2009 Seoul Children’s Theatre Award _’The Best Performance by Audience!’ 
 - 2010 Gimcheon National Theater Festival For Family_ ‘The Excellent Actor!’
 
-## Official Invitation :
+### Official Invitation :
 
 - International Puppet Theater Festival / Theatre Festival for Children & Young
 (Argentina, Romania, India, Korea, Turkey, Israel, Singapore, China)
 
-## [Main Concept]
+### [Main Concept]
 
 > “A man jumping into the real drawing and the fantastic journey!” -<Paper Window> integrates performance with multimedia painting
 > “Integration between digital & analog, theatre & drawing, stage & audience!”
@@ -47,7 +48,7 @@ With a live video backdrop, a magical sketchbook comes to life through the real-
 
 This unique work has been invited to different International performing arts festivals with notable prizes
 
-## [Synopsis]
+### [Synopsis]
 
 ‘Paper Window’ comprises of 3 story chapters. The Spot, The Lines and The Strange Stairs, with an interactive segment which happens in between chapters known as “Snack Time”, where food items are transformed into funny pictures by the painter and the actor. The last part of the performance involves audience members coming up to the screen to interact and become part of the live artwork!
 
