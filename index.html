@@ -5,7 +5,7 @@ layout: default
 <div class="jumbotron" style="background: url(/assets/global/main1.jpg) no-repeat; background-size: cover; filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/assets/global/main1.jpg', sizingMethod='scale');">
   <div class="container"{% if site.data.front.banner.link %} onclick="location.href='{{ site.data.front.banner.link }}'"{% endif %}>
     {% if site.data.front.banner.title %}
-    <h1 class="display-4"><span class="bg-warning text-warning">{{ site.data.front.banner.title }}</span></h1>
+    <h1 class="display-1"><span class="bg-warning text-warning">{{ site.data.front.banner.title }}</span></h1>
     {% endif %}
     <ul class="list-unstyled">
       {% if site.data.front.banner.when %}<li><span class="bg-warning text-warning lead">{{ site.data.front.banner.when }}</span></li>{% endif %}
@@ -28,7 +28,7 @@ layout: default
     <div class="row">
       {% assign courses = site.courses | sort:"course_id" | reverse  %}
       {% for course in courses limit:3 %}
-      <div class="col-md-4">
+      <div class="list-item col-sm-4">
         <a href="{{ course.url }}"><img class="img-responsive" src="/assets/courses/{{ course.slug }}/photo/{{ course.featured_image }}" alt="{{ course.title }}"></a>
         <h4><a href="{{ course.url }}" class="text-info">{{ course.title }}</a></h4>
         <p class="card-text">{{ course.description }}</p>
@@ -45,7 +45,7 @@ layout: default
     <div class="row">
       {% assign works = site.works | sort:"wid" | reverse  %}
       {% for work in works limit:3 %}
-      <div class="col-md-6">
+      <div class="list-item col-sm-6">
         <a href="{{ work.url }}"><img class="img-responsive" src="{{ work.featured_image }}" alt="{{ work.title }}"></a>
         <h4><a href="{{ work.url }}" class="text-info">{{ work.title }}</a></h4>
         <p class="card-text">{{ work.description }}</p>
@@ -56,15 +56,12 @@ layout: default
   </div>
 </div>
 
-
 <div class="jumbotron">
   <div class="container">
     <h2>꽃밭 소개</h2>
     <div class="row">
       <div class="col-sm-6">
-        <p class="lead">
-          {{ site.data.front.introduction | escape | markdownify }}
-        </p>
+        {{ site.data.front.introduction | escape | markdownify }}
         <ul id="download" class="list-inline">
           <li class="list-inline-item"><a class="btn btn-lg btn-info" href="/assets/global/ccotbbat-programbook.pdf"><i class="fa fa-download" aria-hidden="true"></i> 프로그램북</a></li>
           <li class="list-inline-item"><a class="btn btn-lg btn-info" href="/assets/global/profile-ko.pdf"><i class="fa fa-download" aria-hidden="true"></i> 프로필</a></li>
@@ -75,7 +72,7 @@ layout: default
           <li><a href="http://voicetheater.net" target="_blank"><img src="/assets/global/momsori.gif" alt="몸소리" style="height: 70px;"></a></li>
         </ul>
       </div>
-      <div class="col-sm-6 lead">
+      <div class="col-sm-6 history">
         {{ site.data.front.history | escape | markdownify }}
       </div>
     </div>

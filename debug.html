@@ -1,0 +1,65 @@
+---
+layout: null
+---
+{{ site.courses.size }}
+{% for course in site.courses %}
+{{ course.slug }} - {{ course.title }}
+{% endfor %}
+
+{% for group in site.data.courses-order %}
+  {% assign items = group | split: ' - ' %}
+  {{ items | inspect }}
+  <div class="group clearfix">
+    <h3 class="text-success">{{ items | first }}</h3>
+    {% for item in items %}{% if forloop.index != 1 %}{% assign title = item %}{% include course-list-item.html %}{% endif %}{% endfor %}
+  </div>
+{% endfor %}
+
+
+{% comment %}
+
+각의 부제와 형태 살려서
+예. 살아나는 미술관, 살아나는 박물관! ‘몸으로 만드는 예술품’ (교육+제작+전시+퍼포먼스)
+
+순서
+
+<아동 청소년 가족>
+몸으로 만드는 예술품
+미디어놀이터-내가 그린 그림 속으로 풍덩
+조각그림자 공연과 극놀이
+아무거나 줄인형 공연과 극놀이
+오브제 연극놀이
+엄마와 아이가 함께 떠나는 신나는 연극여행
+
+<성인-일반인 과정 : 치유>
+보이스 세라피
+몸-오브제 세라피
+
+<성인-전문가 과정>
+기존 5개 전부
+
+아동 청소년 가족
+body-sculpture - 몸으로 만드는 예술품
+into-my-drawing - 내가 그린 그림속으로 풍덩
+shadow - 조각그림자 공연과 극놀이
+whatever - 아무거나 줄인형 공연과 극놀이
+objet-play - 오브제 연극놀이
+mom-child - 엄마와 아이가 함께 떠나는 신나는 연극여행!
+
+성인 일반인 과정: 치유
+voice-therapy - 보이스 세라피
+body-objet-therapy - 몸-오브제 세라피
+
+성인 전문가 과정
+visual-theater-workshop - Visual Theater 워크숍
+body-objet-workshop - 몸과 오브제(오브제 씨어터) 워크숍
+voice-movement-workshop - 보이스와 움직임 워크숍
+poetry-perfomance-workshop - 시(詩) 퍼포먼스 워크숍
+video-theater-workshop - 비디오영상 씨어터 워크숍
+
+--
+im-objet - 연극놀이-나는 오브제다!
+video-play - 비디오 영상 극놀이
+
+
+{% endcomment %}

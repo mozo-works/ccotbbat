@@ -2,7 +2,24 @@
 ---
 @import "variables";
 @import "bootstrap/bootstrap";
-// @import "courses";
+
+// Type display classes
+.display-1 {
+  font-size: $display1-size !important;
+  font-weight: $display1-weight !important;
+}
+.display-2 {
+  font-size: $display2-size !important;
+  font-weight: $display2-weight !important;
+}
+.display-3 {
+  font-size: $display3-size !important;
+  font-weight: $display3-weight !important;
+}
+.display-4 {
+  font-size: $display4-size !important;
+  font-weight: $display4-weight !important;
+}
 
 #footer {
   margin-top: 12em;
@@ -19,19 +36,17 @@ p, li {
   margin: 0;
 }
 
-.front .jumbotron {
-  margin-bottom: 0;
-}
-
 .courses {
-  .col-md-4 {
+  .item {
     margin-bottom: $line-height-computed;
+    min-height: 340px;
   }
+
 }
 
 .course .sidebar-module,
 .work .sidebar-module {
-  padding: 1em;
+  // padding: .5em;
 }
 
 /**
@@ -44,15 +59,10 @@ p, li {
 .{{ course.slug }} .course-header {
   background: url('/assets/courses/{{ course.slug }}/photo/{{ course.featured_image }}') no-repeat;
   background-size: cover;
+  background-position: center;
 }
   {% endif %}
 {% endfor %}
-
-.course {
-  .course-hedader {
-
-  }
-}
 
 
 /**
@@ -65,6 +75,7 @@ p, li {
 .{{ work.slug }} .work-header {
   background: url('{{ work.featured_image }}') no-repeat;
   background-size: cover;
+  background-position: center;
 }
   {% endif %}
 {% endfor %}
@@ -78,4 +89,32 @@ p, li {
 
 .press {
 
+}
+
+
+.group {
+  h3 {
+    padding-left: 15px;
+    margin-bottom: 30px;
+  }
+  .item {
+    img { margin-bottom: 10px; }
+    h4 { margin: 0; }
+  }
+}
+
+.icon-bar {
+  background-color: $brand-success;
+}
+
+.front {
+  .jumbotron {
+    margin-bottom: 0;
+  }
+  .list-item  {
+    margin-bottom: 30px;
+  }
+  .history {
+    font-size: 20px;
+  }
 }

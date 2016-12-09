@@ -3,8 +3,9 @@ layout: default
 title: 작품
 ---
 
+{% include page-header.html %}
+
 <div class="container">
-  <h2 class="page-header">작품</h2>
   <div class="row">
     {% assign works = site.works | sort:"wid" | reverse  %}
     {% for work in works %}
@@ -14,7 +15,7 @@ title: 작품
     {% endif %}
     <div class="col-md-4">
       <a href="{{ work.id }}"><img class="img-responsive" src="{{ featured_image }}" alt="{{ work.title }}"></a>
-      <h4 class="card-title"><a href="{{ work.id }}">{{ work.title }}</a></h4>
+      <h4 class="card-title"><a class="text-warning bg-warning" href="{{ work.id }}">{{ work.title }}</a></h4>
       <p class="card-text">{{ work.description }}</p>
     </div>
     {% endfor %}

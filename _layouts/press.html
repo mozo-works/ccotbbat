@@ -2,8 +2,15 @@
 layout: default
 ---
 
+<div class="jumbotron" style="background: url(/assets/global/main1.jpg) no-repeat; background-size: cover; filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/assets/global/main1.jpg', sizingMethod='scale');">
+  <div class="container">
+    <h1 class="display-3"><span class="bg-warning text-warning">
+    {{ page.title | escape | replace: ':', ':<br>' }}
+    </span></h1>
+  </div>
+</div>
+
 <div class="container about">
-  <h1 class="page-header">{{ page.title | escape | replace: ':', ':<br>' }}</h1>
   <div class="col-lg-8 about-content">
     <p class="meta text-muted pull-right">
        {{ page.reporter }} / {{ page.editors }} / {{ page.date | date: "%Y-%m-%d" }}

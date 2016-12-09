@@ -1,0 +1,8 @@
+{% assign course = site.courses | where:"title", title | first %}
+
+<div class="item {{ course.slug }} col-md-4 col-sm-6">
+  <a href="{{ course.url }}"><img class="img-responsive" src="/assets/courses/{{ course.slug }}/photo/{{ course.featured_image }}" alt="{{ course.title }}"></a>
+  <span class="text-muted">{{ course.catchphrase }}</span>
+  <h4><a href="{{ course.url }}" class="text-warning bg-warning">{{ course.title }}</a></h4>
+  <p class="text-muted">({{ course.type }})</p>
+</div>

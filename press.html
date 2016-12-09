@@ -3,8 +3,9 @@ layout: default
 title: 언론보도
 ---
 
+{% include page-header.html %}
+
 <div class="container">
-  <h2 class="page-header">{{ page.title }}</h2>
   <div class="row">
     {% assign press = site.press | sort:"wid" | reverse  %}
     {% for work in press %}
