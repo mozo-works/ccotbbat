@@ -26,9 +26,18 @@ Key Performances : media painting performance ‘Paper Window’, and an imagina
 
 ## People
 
+![CheolSung Lee](/assets/img/chol3.jpg)
+
 CheolSung Lee, the leader of CCOTBBAT(Space for Experiential Art) and CCOT(Visual Theater Troupe), is an artist who combines poetry, art and performance.
 He studied the French literature(especially poetry) at faculty and graduation school in Seoul National University, and majored in ‘visual theater’ in 2000-2003 at The School of Visual Theater in Israel.
 
 He has showcased experimental performances that use the mediums of poetry, painting, installation art, and video art. Over the last decade, he has been invited internationally as an official guest to numerous experimental art festivals, street theater festivals, and other theaters, and has won the Seoul Children's Theater Prize's Best Artwork Award, Best Acting Award, and Most Popular Award for two times, not to mention the UNIMA Congress's Excellent Visual Effect Award.
 
 On other fronts, as a poet and traveler he has trekked through the wilds of more than 30 different countries, and has had two collections of poems published, based his experiences.
+
+## Contact
+
+* [T] +82-10-2396-1020
+* [e-mail] namunun@hanmail.net
+* [Address] (13830) 2F, 55, Boorim4gil, Gwacheonsi, Kyeongkido, South Korea.
+ 
