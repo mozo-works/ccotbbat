@@ -5,9 +5,8 @@ catchphrase: Live animation with interactive performance
 slug: paper-window
 featured_image: /assets/works/paper-window/photo/IMG_6259.jpg
 videos:
-  - 5uqBjxJFNXA
-  - U7J1j9fpPR4
   - xsUbTe3mMrY
+  - 5uqBjxJFNXA
 promos:
 docs:
 meta: |

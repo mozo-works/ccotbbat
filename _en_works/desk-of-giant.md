@@ -19,10 +19,16 @@ meta: |
   * Performer: Cheol-Sung Lee, Hye-won Kim
 ---
 
-“2012 Seoul Children's Theater Awards in Korea”
- 'The Best Production'!
- 'The Best Performer'!
- 'The Best Audience Award'!
+### Awards!
+
+- 2012 Seoul Children's Theater Awards in Korea ('The Best Production'!
+'The Best Performer'! 'The Best Audience Award'!)
+
+### Official Invitation!
+
+- 2013 OSAKA Intenational Art Festival for Kids 'Tact-Fest' (JAPAN)
+- 2014 KAOHSIUNG Children's Art Education Festival (TAIWAN)
+- 2015 ISTANBUL International Puppet Festival (TURKEY)
 
 ### [Main Concept]
 
