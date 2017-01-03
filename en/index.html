@@ -5,7 +5,7 @@ layout: en/default
 <div class="jumbotron" style="background: url(/assets/global/main1.jpg) no-repeat; background-size: cover; filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/assets/global/main1.jpg', sizingMethod='scale');">
   <div class="container"{% if site.data.front.en.banner.link %} onclick="location.href='{{ site.data.front.en.banner.link }}'"{% endif %}>
     {% if site.data.front.en.banner.title %}
-    <h1 class="display-4"><span class="bg-warning text-warning">{{ site.data.front.en.banner.title }}</span></h1>
+    <h1 class="display-5"><span class="bg-warning text-warning">{{ site.data.front.en.banner.title }}</span></h1>
     {% endif %}
     <ul class="list-unstyled">
       {% if site.data.front.en.banner.when %}<li><span class="bg-warning text-warning lead">{{ site.data.front.en.banner.when }}</span></li>{% endif %}
@@ -52,13 +52,15 @@ layout: en/default
           <li class="list-inline-item"><a class="btn btn-lg btn-info" href="/assets/global/profile-en.pdf"><i class="fa fa-download" aria-hidden="true"></i> Profile</a></li>
         </ul>
         <p>&nbsp;</p>
+        <p><img src="/assets/global/ccotbbat.gif" alt="logo" /></p>
+      </div>
+      <div class="col-sm-6 lead">
+        {{ site.data.front.en.history | escape | markdownify }}
+        <p>&nbsp;</p>
         <ul class="list-inline">
           <li><a href="http://visualtheater.kr" target="_blank"><img src="/assets/global/ccot.gif" alt="꽃"></a></li>
           <li><a href="http://voicetheater.net" target="_blank"><img src="/assets/global/momsori.gif" alt="몸소리" style="height: 70px;"></a></li>
         </ul>
-      </div>
-      <div class="col-sm-6 lead">
-        {{ site.data.front.en.history | escape | markdownify }}
       </div>
     </div>
   </div>
