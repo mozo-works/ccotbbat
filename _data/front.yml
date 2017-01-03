@@ -19,12 +19,12 @@ history: |
 
 
 banner:
-  title: 공연 ‘마사지사’
-  when: 2016년 9월 9~11일 11시
-  where: 스페인 피라타레가 유로파 광장
+  title: 공연 ‘종이창문’
+  when: 2016년 7월 10 ~ 25일
+  where: 인도 3개 도시(첸나이, 방갈로르, 코치) 초청투어
   description:
   bg-image: 20160831/IMG_9887.jpeg
-  link: https://www.facebook.com/visualtheaterccot/posts/655738851242536
+  link: /work/paper-window/
   long-image:
   ticket:
 
@@ -40,11 +40,11 @@ en:
     * an imaginative media performance 'Giant's Table'
 
   banner:
-    title: 'Massager'
-    when: 11am, 9~11th Sep. 2016
-    where: Placa d'Europa, Fira Tarrega in Spain
+    title: 'Paper Window'
+    when: 10 ~ 25th Jul. 2016
+    where: Tour in India (Chennai, Bangalore, Kochi)
     description:
     bg-image: 20160831/IMG_9887.jpeg
-    link: https://www.facebook.com/visualtheaterccot/posts/655864801229941
+    link: /en/work/paper-window/
     long-image:
     ticket:
