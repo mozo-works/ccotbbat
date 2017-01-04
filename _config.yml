@@ -1,14 +1,14 @@
 # Meta
 title: 체험예술공간 꽃밭
 description: 아동, 청소년과 가족을 위한 미술·연극 통합형 공연과 전시 교육 프로그램을 운영합니다.
-url: http://ccotbbat.com
+url: https://ccotbbat.com
 baseurl: ''
 repository: mozo-works/ccotbbat
 
 en:
   name: CCOTBBAT
   description: CCOTBBAT, a visual theatre company, is a professional arts group which integrates fine arts and theatre for performance and organizes art-experienced workshops.
-  url: http://ccotbbat.com/en
+  url: https://ccotbbat.com/en
 
 timezone: 'Asia/Seoul'
 permalink: pretty
