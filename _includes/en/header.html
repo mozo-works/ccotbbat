@@ -14,7 +14,7 @@
       <ul class="nav navbar-nav navbar-right">
         {% for item in site.data.menu_en %}
         <li class="nav-item{% if page.url == item.url %} active{% endif %}">
-          <a class="nav-link text-success" href="{{ item.url }}">{{ item.title }}{% if page.url == item.url %} <span class="sr-only">(current)</span>{% endif %}</a>
+          <a class="nav-link text-success" href="/en{{ item.url }}">{{ item.title }}{% if page.url == item.url %} <span class="sr-only">(current)</span>{% endif %}</a>
         </li>
         {% endfor %}
       </ul>
