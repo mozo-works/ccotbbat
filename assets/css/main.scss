@@ -3,6 +3,24 @@
 @import "variables";
 @import "bootstrap/bootstrap";
 
+.wf-loading *,
+.wf-inactive * {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+:lang(en).wf-active * {
+  font-family: 'Noto Sans KR', 'Malgun Gothic';
+}
+
+:lang(en).wf-active * {
+  font-family: 'Roboto';
+}
+
+:lang(ko).wf-active .fa,
+:lang(en).wf-active .fa {
+  font-family: 'FontAwesome';
+}
+
 // Type display classes
 .display-1 {
   font-size: $display1-size !important;
@@ -65,6 +83,7 @@ p, li {
   background: url('/assets/courses/{{ course.slug }}/photo/{{ course.featured_image }}') no-repeat;
   background-size: cover;
   background-position: center;
+  filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/assets/courses/{{ course.slug }}/photo/{{ course.featured_image }}', sizingMethod='scale');
 }
   {% endif %}
 {% endfor %}
@@ -81,6 +100,7 @@ p, li {
   background: url('{{ work.featured_image }}') no-repeat;
   background-size: cover;
   background-position: center;
+  filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='{{ work.featured_image }}', sizingMethod='scale');
 }
   {% endif %}
 {% endfor %}
