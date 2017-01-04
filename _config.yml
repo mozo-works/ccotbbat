@@ -27,7 +27,7 @@ kramdown:
   input: GFM
   syntax_highlighter: rouge
   entity_output: :as_input
-  hard_wrap: true
+  hard_wrap: false
   smart_quotes: lsquo,rsquo,ldquo,rdquo
 
 # collections

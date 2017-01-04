@@ -21,6 +21,10 @@
   font-weight: $display4-weight !important;
 }
 
+img {
+  max-width: 100%;
+}
+
 #footer {
   margin-top: 12em;
   .front & {
@@ -46,7 +50,8 @@ p, li {
 
 .course .sidebar-module,
 .work .sidebar-module {
-  // padding: .5em;
+  padding: 1em;
+  line-height: 1.6;
 }
 
 /**
@@ -128,5 +133,23 @@ p, li {
   }
   .history {
     font-size: 20px;
+  }
+}
+
+.content a,
+.about-content a {
+  font-weight: 700;
+}
+
+.press {
+  .article-box {
+    min-height: 345px;
+    margin-bottom: 45px;
+  }
+  .press-featured-image {
+    display: inline-block;
+    width: 360px;
+    height: 280px;
+    overflow: hidden;
   }
 }

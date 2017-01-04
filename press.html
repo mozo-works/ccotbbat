@@ -5,18 +5,20 @@ title: 언론보도
 
 {% include page-header.html %}
 
-<div class="container">
+<div class="container press">
   <div class="row">
     {% assign press = site.press | sort:"wid" | reverse  %}
-    {% for work in press %}
+    {% for article in press %}
     {% assign featured_image = 'http://placehold.it/400x225' %}
-    {% if work.featured_image %}
-      {% assign featured_image = work.featured_image %}
+    {% if article.featured_image %}
+      {% assign featured_image = article.featured_image %}
     {% endif %}
     <div class="col-md-4">
-      <a href="{{ work.id }}"><img class="img-responsive" src="{{ featured_image }}" alt="{{ work.title }}"></a>
-      <h4 class="card-title"><a href="{{ work.id }}">{{ work.title }}</a></h4>
-      <p class="card-text">{{ work.description }}</p>
+      <div class="article-box">
+        <a class="press-featured-image img-thumbnail" href="{{ article.url }}"><img src="{{ featured_image }}" alt="{{ article.title }}"></a>
+        <h4 class="card-title"><a href="{{ article.url }}">{{ article.title }}</a></h4>
+        <p class="card-text">{{ article.description }}</p>
+      </div>
     </div>
     {% endfor %}
   </div>

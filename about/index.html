@@ -23,5 +23,5 @@ body: |
   <p>&nbsp;</p>
   <p><img src="/assets/global/ccotbbat.gif" alt="logo" /></p>
   <p>&nbsp;</p>
-  {{ page.body | escape | markdownify }}
+  {{ page.body | escape | smartify | newline_to_br | markdownify | replace: '<br /><br />', '<br />' }}
 </div>

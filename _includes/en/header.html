@@ -1,17 +1,23 @@
-<div class="bg-success">
-  <nav class="navbar">
-    <div class="container">
-      <a class="navbar-brand text-success pull-left" href="/en/">{{ site.en.name }}</a>
+<div class="navbar bg-success">
+  <div class="container">
+    <div class="navbar-header">
+      <a class="navbar-brand text-success pull-left" href="/">{{ site.en.name }}</a>
       <a class="pull-left" href="/"><small class="label label-default">한국어</small></a>
-      {% if site.data.menu_en %}
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+    </div>
+    <div id="navbar" class="navbar-collapse collapse">
       <ul class="nav navbar-nav navbar-right">
         {% for item in site.data.menu_en %}
         <li class="nav-item{% if page.url == item.url %} active{% endif %}">
-          <a class="nav-link text-success" href="/en{{ item.url }}">{{ item.title | capitalize }}{% if page.url == item.url %} <span class="sr-only">(current)</span>{% endif %}</a>
+          <a class="nav-link text-success" href="{{ item.url }}">{{ item.title }}{% if page.url == item.url %} <span class="sr-only">(current)</span>{% endif %}</a>
         </li>
         {% endfor %}
       </ul>
-      {% endif %}
     </div>
-  </nav>
+  </div>
 </div>
