@@ -19,7 +19,7 @@
     <![endif]-->
   </head>
   <body{% if page.url %} class="{{ page.url | replace:'/',' ' | lstrip | rstrip }}{% if page.url == '/en/' %} front{% endif %}"{% endif %}>
-
+    {% include ga.html %}
     {% include en/header.html %}
 
     {{ content }}

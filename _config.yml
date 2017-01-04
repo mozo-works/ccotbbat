@@ -13,6 +13,15 @@ en:
 timezone: 'Asia/Seoul'
 permalink: pretty
 
+# SEO
+facebook:
+  app_id: 618140558345676
+  publisher: https://www.facebook.com/visualtheaterccot
+logo: /assets/global/ccotbbat.gif
+
+google_site_verification: ImNi4YCIDwp7AbqRHZU4IIXENZ6f4H_sVp6DGEk80Qk
+google_analytics: UA-81266340-2
+
 # Build
 exclude:
   - .jekyll-metadata
@@ -23,12 +32,19 @@ exclude:
   - README.md
   - LICENSE
 
+sass:
+  style: :compressed
+
 kramdown:
   input: GFM
   syntax_highlighter: rouge
   entity_output: :as_input
   hard_wrap: false
   smart_quotes: lsquo,rsquo,ldquo,rdquo
+
+gems:
+  - jekyll-seo-tag
+  - jekyll-sitemap
 
 # collections
 collections:
