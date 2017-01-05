@@ -19,7 +19,7 @@ meta: |
   * Musical Director : Yun-Mi Han
   * Performer : Cheol-Sung Lee, Hye-Won Kim
 ---
-
+{% capture manuscript %}
 ### Award :
 
 - 2012 World Puppetry Congress(Chengdu in China) _ ‘Excellent Visual Effect’!
@@ -72,5 +72,8 @@ Between S#1 and S#2 / S#2 and S#3, the painter is providing with his drawings fo
 ### ▶ PART 2. Audience Making the Show! (20 min.)
 
 The audience stands on the painter’s table for themselves and make 3 different kinds of improvisation dramas by the help of giant’s(painter’s) hands
+
+{% endcapture %}
+{{ manuscript | escape | smartify | markdownify }}
 
 
