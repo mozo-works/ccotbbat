@@ -42,9 +42,10 @@ kramdown:
   hard_wrap: false
   smart_quotes: lsquo,rsquo,ldquo,rdquo
 
-gems:
+plugins:
   - jekyll-seo-tag
   - jekyll-sitemap
+  - jekyll-github-metadata
 
 # collections
 collections:
