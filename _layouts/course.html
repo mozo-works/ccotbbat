@@ -2,6 +2,10 @@
 layout: default
 ---
 
+{% assign repository = site.github.public_repositories | where: "full_name", site.repository %}
+{% assign repo = repository[0] %}
+{% capture edit_prose %}http://prose.io/#{{ repo.full_name }}/edit/{{ repo.default_branch }}{% endcapture %}
+
 <div class="jumbotron course-header">
   <div class="container">
     <h1><span class="bg-success">{{ page.title }}</span></h1>
@@ -32,6 +36,9 @@ layout: default
               {% endfor %}
             </tbody>
           </table>
+          <ul class="list-inline pull-right edit-link">
+            <li><a href="{{ edit_prose }}/_data/tables/{{ page.slug }}.csv"><i class="fa fa-pencil-square-o fa-3x"></i></a></li>
+          </ul>
         {% endif %}
       {% endfor %}
 
