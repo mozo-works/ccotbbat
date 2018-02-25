@@ -173,3 +173,21 @@ p, li {
     overflow: hidden;
   }
 }
+
+.edit-link {
+  i {
+    visibility: hidden;
+  }
+  a {
+    color: #dff0d8;
+    display: inline-block;
+    width: 55px;
+    height: 55px;
+    &:hover {
+      color: $brand-success;
+      i {
+        visibility: visible;  
+      }
+    }
+  }
+}
