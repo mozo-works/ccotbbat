@@ -3,13 +3,13 @@ course_id: 4
 slug: body-sculpture
 title: 몸으로 만드는 예술품
 catchphrase: '''살아나는 미술관, 살아나는 박물관!'''
-category: 아동-청소년-가족 (교육)
-type: 교육+제작+전시
+category: 아동-청소년-가족-매개자(교강사) (공연+교육)
+type: 교육+전시+퍼포먼스
 target: '''아동/청소년/교사,강사'''
 instructors: 이철성 외
 space: 모두가 움직이기 편한 공간
 materials: 편한 복장 등
-results: 맛사지 조각들과 그 외의 설치물들을 공간에 창조적으로 설치한다.
+results: 마사지 조각들과 그 외의 설치물들을 공간에 창조적으로 설치한다.
 featured_image: IMG_4116.jpg
 videos: null
 promos: null
