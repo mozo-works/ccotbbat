@@ -80,5 +80,18 @@ defaults:
       path: _en_works
     values:
       layout: en/work
-
-
+  - 
+    scope:
+      path: assets/img
+    values:
+      image: true
+  -
+    scope:
+      path: assets/press
+    values:
+      image: true
+  -
+    scope:
+      path: assets/works
+    values:
+      image: true
