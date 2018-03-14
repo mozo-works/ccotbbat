@@ -8,7 +8,7 @@
   font-family: Arial, Helvetica, sans-serif;
 }
 
-:lang(en).wf-active * {
+:lang(ko).wf-active * {
   font-family: 'Noto Sans KR', 'Malgun Gothic';
 }
 
@@ -51,7 +51,7 @@ img {
 }
 
 p, li {
-  font-weight: 100;
+  font-weight: 400;
 }
 
 .navbar {
@@ -190,4 +190,8 @@ p, li {
       }
     }
   }
+}
+
+.table {
+  margin-top: 6rem;
 }

@@ -16,7 +16,10 @@ layout: default
 <div class="container">
   <div class="row">
     <div class="col-sm-8 content">
-      {{ content }}
+      {% capture test %}{{ content }}{% endcapture %}
+
+
+      {{ content | escape | smartify | newline_to_br | replace: '<br /><br />', '<br />' }}
 
       {% for csv in site.data.tables %}
         {% if csv[0] == page.slug %}

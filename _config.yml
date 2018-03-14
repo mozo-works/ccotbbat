@@ -37,9 +37,6 @@ sass:
 
 kramdown:
   input: GFM
-  syntax_highlighter: rouge
-  entity_output: :as_input
-  hard_wrap: false
   smart_quotes: lsquo,rsquo,ldquo,rdquo
 
 plugins:
