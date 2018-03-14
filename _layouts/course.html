@@ -1,10 +1,7 @@
 ---
 layout: default
+inline_img_dir_path: "/assets/courses/###/inline/"
 ---
-
-{% assign repository = site.github.public_repositories | where: "full_name", site.repository %}
-{% assign repo = repository[0] %}
-{% capture edit_prose %}http://prose.io/#{{ repo.full_name }}/edit/{{ repo.default_branch }}{% endcapture %}
 
 <div class="jumbotron course-header">
   <div class="container">
@@ -16,10 +13,8 @@ layout: default
 <div class="container">
   <div class="row">
     <div class="col-sm-8 content">
-      {% capture test %}{{ content }}{% endcapture %}
 
-
-      {{ content | escape | smartify | newline_to_br | replace: '<br /><br />', '<br />' }}
+      {{ content | replace: '<', '&lt;' | replace: '>', '&gt;' | smartify | markdownify | newline_to_br | replace: "</p><br />", "</p>" | replace: "<ul><br />", "<ul>" | replace: "</ul><br />", "</ul>" | replace: "<ol><br />", "<ol>" | replace: "</ol><br />", "</ol>" |replace: "<li><br />", "</li>" | replace: "</li><br />", "</li>" }}
 
       {% for csv in site.data.tables %}
         {% if csv[0] == page.slug %}
@@ -54,11 +49,12 @@ layout: default
       {% endfor %}
       {% endif %}
 
-      {% assign file_pathes =  site.static_files | map: 'path' | join: ', ' %}
-      {% assign course_image_directory = '/assets/courses/' | append: page.slug | append: 'photo' %}
+      {% assign images = site.static_files | where: "image", true %}
+      {% assign file_pathes =  images | map: 'path' | join: ', ' %}
+      {% assign course_image_directory = '/assets/courses/' | append: page.slug | append: '/photo' %}
       {% if file_pathes contains course_image_directory %}
       <h2 class="m-t-2">사진</h2>
-      {% for file in site.static_files %}
+      {% for file in images %}
         {% if file.path contains course_image_directory %}
         <p class="m-y-2"><img src="{{ file.path }}" alt="" class="img-responsive center-block" /></p>
         {% endif %}
