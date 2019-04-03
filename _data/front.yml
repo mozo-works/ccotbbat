@@ -19,9 +19,9 @@ history: |
 
 
 banner:
-  title: 공연 ‘종이창문’
-  when: 2016년 7월 10 ~ 25일
-  where: 인도 3개 도시(첸나이, 방갈로르, 코치) 초청투어
+  title: 공연 ‘거인의 책상’
+  when: 2019년 5월 31일 ~ 6월 2일
+  where: 싱가폴 플립사이드 페스티벌 공식초청 공연
   description:
   bg-image: 20160831/IMG_9887.jpeg
   link: /work/paper-window/
@@ -45,9 +45,9 @@ en:
     * an imaginative media performance 'Giant's Table'
 
   banner:
-    title: 'Paper Window'
-    when: 10 ~ 25th Jul. 2016
-    where: Tour in India (Chennai, Bangalore, Kochi)
+    title: 'Giant's Table'
+    when: 31th Mai ~ 2nd Jun. 2019
+    where: Flipside Festival in Singapore
     description:
     bg-image: 20160831/IMG_9887.jpeg
     link: /en/work/paper-window/
