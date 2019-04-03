@@ -21,7 +21,7 @@ history: |
 banner:
   title: 공연 ‘거인의 책상’
   when: 2019년 5월 31일 ~ 6월 2일
-  where: 싱가폴 플립사이드 페스티벌 공식초청 공연
+  where: 싱가폴 플립사이드 페스티벌(Esplanade) 공식초청 공연
   description:
   bg-image: 20160831/IMG_9887.jpeg
   link: /work/paper-window/
@@ -46,8 +46,8 @@ en:
 
   banner:
     title: ‘Giant's Table’
-    when: 31th Mai ~ 2nd Jun. 2019
-    where: Flipside Festival in Singapore
+    when: 31th May ~ 2nd Jun. 2019
+    where: Flipside Festival(Esplanade) in Singapore
     description:
     bg-image: 20160831/IMG_9887.jpeg
     link: /en/work/paper-window/
