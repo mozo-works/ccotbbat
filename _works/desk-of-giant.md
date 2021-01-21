@@ -1,7 +1,7 @@
 ---
 wid: 2
 title: 미디어 상상놀이극 <거인의 책상>
-catchphrase: 알쏭달쏭 거인의 책상 위에 펼쳐진 이야기가 궁금하다?!
+catchphrase: 집채만큼 커진 일상의 사물들이 펼치는 환상의 드라마!
 category: 아동-청소년-가족 (공연)
 type: 공연
 slug: desk-of-giant
