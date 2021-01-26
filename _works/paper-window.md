@@ -6,8 +6,9 @@ category: 미술관/박물관 프로젝트, 아동-청소년-가족 (공연)
 slug: paper-window
 featured_image: /assets/works/paper-window/photo/IMG_6259.jpg
 videos:
-  - xsUbTe3mMrY
+  - AAhtJHUmWsY
   - 5uqBjxJFNXA
+  - xsUbTe3mMrY
 promos:
 docs:
 meta: |
