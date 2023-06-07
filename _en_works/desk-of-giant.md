@@ -9,15 +9,14 @@ videos:
 promos:
 docs:
 meta: |
-  * Duration: 70min
+  * Duration: 60min
   * Audience: 4 years old and over
   * Space: Theater, Gallery, Outdoor
   * Creator & Director: Cheol-Sung Lee
-  * Visual Director: Hyewon Kim
+  * Visual Director: Sojeong Ha
   * Music Design: Jung-Hoon Lee
-  * Musical Director: Yun-Mi Han
-  * Performer: Cheol-Sung Lee, Hye-won Kim
----
+  * Musical Director: Soyool Moon
+  * Performer: Cheol-Sung Lee, Sojeong Ha
 
 ### Awards!
 
@@ -29,6 +28,8 @@ meta: |
 - 2013 OSAKA Intenational Art Festival for Kids 'Tact-Fest' (JAPAN)
 - 2014 KAOHSIUNG Children's Art Education Festival (TAIWAN)
 - 2015 ISTANBUL International Puppet Festival (TURKEY)
+- 2018 BANGKOK, Korean Cultural Center(THAILAND)
+- 2019 SINGAPORE Flipside Festival in Esplanade
 
 ### [Main Concept]
 
