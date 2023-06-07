@@ -14,10 +14,10 @@ meta: |
   * space : Theater, Gallery, Outdoor and alternative spaces.
   * Audience: All ages
   * Creator & Director : Cheol-Sung Lee
-  * Visual Director : Hye-Won Kim
+  * Visual Director : Sojeong Ha
   * Music Design : Soo-Kyeong Shin
-  * Musical Director : Yun-Mi Han
-  * Performer : Cheol-Sung Lee, Hye-Won Kim
+  * Musical Director : Soyool Moon
+  * Performer : Cheol-Sung Lee, Sojeong Ha
 ---
 {% capture manuscript %}
 ### Award :
