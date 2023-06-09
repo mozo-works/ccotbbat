@@ -15,21 +15,25 @@ layout: en/default
       {{ content }}
 
       {% if page.videos.size > 0 %}
-      {% for item in page.videos %}
-      <div class="embed-responsive embed-responsive-16by9 m-t-2">
-        <iframe class="embed-responsive-item" src="//www.youtube.com/embed/{{ item }}" allowfullscreen></iframe>
-      </div>
-      {% endfor %}
+        <h2 class="m-t-2">Video</h2>
+        {% for item in page.videos %}
+          <div class="embed-responsive embed-responsive-16by9 m-t-2">
+            <iframe class="embed-responsive-item" src="//www.youtube.com/embed/{{ item }}" allowfullscreen></iframe>
+          </div>
+        {% endfor %}
       {% endif %}
 
-      {% assign file_pathes =  site.static_files | map: 'path' | join: ', ' %}
-      {% assign work_image_directory = '/assets/works/' | append: page.slug | append: 'photo' %}
-      {% if file_pathes contains work_image_directory %}
-      {% for file in site.static_files %}
-        {% if file.path contains work_image_directory %}
-        <p class="m-y-2"><img src="{{ file.path }}" alt="" class="img-responsive center-block" /></p>
-        {% endif %}
-      {% endfor %}
+      {% assign images = site.static_files | where: "image", true %}
+      {% assign work_image_directory = '/assets/works/' | append: page.slug | append: '/photo' %}
+      {% assign image_pathes =  images | map: 'path' | join: ', ' %}
+
+      {% if image_pathes contains work_image_directory %}
+        <h2 class="m-t-2">Photo</h2>
+        {% for file in site.static_files %}
+          {% if file.path contains work_image_directory %}
+          <p class="m-y-2"><img src="{{ file.path }}" alt="" class="img-responsive center-block" /></p>
+          {% endif %}
+        {% endfor %}
       {% endif %}
 
     </div>
