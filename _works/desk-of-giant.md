@@ -7,6 +7,7 @@ type: 공연
 slug: desk-of-giant
 featured_image: /assets/works/desk-of-giant/photo/04.jpg
 videos:
+  vwEeOy1vyGk
   _02elUwQKyg
 promos:
 docs:
