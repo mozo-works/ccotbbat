@@ -18,16 +18,25 @@ history: |
   * 09‘-20’ 국립극장, 서울대미술관, 서울대입학본부, 국립현대미술관, 예술의전당, 한국과학창의재단, 한국문화예술교육진흥원, 소마미술관, (광주, 충남, 인천, 경북, 전북)문화예술교육지원센터 초청 ‘문화예술교육웍샵’ 진행!
   * 11‘-15’ 경희대, 서울신학대 교수연수, 서울성모병원, 기아자동차 임직원 연수 진행
 
-
-banner:
-  title: 공연 ‘거인의 책상’
+slides:
+- title: 공연 ‘거인의 책상’
+  when: 2025년 8월 1일(금) 11시, 12일(토) 11시, 14시
+  where: 안양아트센터 수리홀
+  description:
+  bg-image: /assets/img/20250801.jpg
+  link: /work/desk-of-giant/
+  long-image: /assets/img/20250801-1372.jpg
+  ticket:
+  ticket_text:
+- title: 공연 ‘거인의 책상’
   when: 2024년 8월 10일 ~ 11일
   where: 인도네시아 살리하라 문화센터(살리하라 국제공연예술축제 SIPFest) 공식초청 공연!
   description:
-  bg-image: 20160831/IMG_9887.jpeg
+  bg-image: /assets/global/main1.jpg
   link: /work/desk-of-giant/
   long-image:
   ticket:
+  ticket_text:
 
 courses_order:
   - 몸으로 만드는 예술품
