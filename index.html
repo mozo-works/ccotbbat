@@ -17,29 +17,31 @@ layout: default
   <!-- Wrapper for slides -->
   <div class="carousel-inner" role="listbox">
     {% for slide in site.data.front.slides %}
-    <div data-seq="{{ forloop.index0 }}" class="item {% if forloop.first == true %} active{% endif %}" style="background: url('{{ slide.bg-image }}') no-repeat; background-size: cover;">
+    <div data-seq="{{ forloop.index0 }}" class="item {% if forloop.first == true %} active{% endif %}" style="background: url('{{ slide.bg-image }}') no-repeat; background-size: cover; min-height: 300px;">
       <div class="container">
-        {% if slide.title %}
-        <h1 class="display-4"><span class="bg-warning text-warning">{{ slide.title }}</span></h1>
-        {% endif %}
-        <ul class="list-unstyled">
-          {% if slide.when %}<li><span class="bg-warning text-warning lead">{{ slide.when }}</span></li>{% endif %}
-          {% if slide.where %}<li><span class="bg-warning text-warning lead">{{ slide.where }}</span></li>{% endif %}
-        </ul>
-        {% if slide.description %}
-        <div class="bg-warning text-warning">{{ slide.description | markdownify }}</div>
-        {% endif %}
-        {% if slide.ticket %}
-        <p>&nbsp;</p>
-        <p class="lead">
-          <a class="btn btn-success btn-lg" target="_blank" href="{{ slide.ticket }}" role="button">{{ slide.ticket_text }}</a>
-        </p>
-        {% endif %}
-        {% if slide.long-image %}
-        <p class="lead">
-          <a class="btn btn-success btn-lg" target="_blank" href="/assets/img/{{ slide.long-image }}" role="button">공연 정보</a>
-        </p>
-        {% endif %}
+        <a href="{{ slide.link }}" target="_blank">
+          {% if slide.title %}
+          <h1 class="display-4"><span class="bg-warning text-warning">{{ slide.title }}</span></h1>
+          {% endif %}
+          <ul class="list-unstyled">
+            {% if slide.when %}<li><span class="bg-warning text-warning lead">{{ slide.when }}</span></li>{% endif %}
+            {% if slide.where %}<li><span class="bg-warning text-warning lead">{{ slide.where }}</span></li>{% endif %}
+          </ul>
+          {% if slide.description %}
+          <div class="bg-warning text-warning">{{ slide.description | markdownify }}</div>
+          {% endif %}
+          {% if slide.ticket %}
+          <p>&nbsp;</p>
+          <p class="lead">
+            <a class="btn btn-success btn-lg" target="_blank" href="{{ slide.ticket }}" role="button">{{ slide.ticket_text }}</a>
+          </p>
+          {% endif %}
+          {% if slide.long-image %}
+          <p class="lead">
+            <a class="btn btn-success btn-lg" target="_blank" href="{{ slide.long-image }}" role="button">공연 정보</a>
+          </p>
+          {% endif %}
+        </a>
       </div>
     </div>
     {% endfor %}

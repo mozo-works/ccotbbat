@@ -24,8 +24,8 @@ slides:
   where: 안양아트센터 수리홀
   description:
   bg-image: /assets/img/20250801.jpg
-  link: /work/desk-of-giant/
-  long-image: /assets/img/20250801-1372.jpg
+  link: /assets/img/20250801-1372.jpg
+  long-image:
   ticket:
   ticket_text:
 - title: 공연 ‘거인의 책상’
