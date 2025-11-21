@@ -20,6 +20,15 @@ history: |
 
 slides:
 - title: 미디어 상상놀이극 ‘거인의 책상’ 공연 
+  when: 2026년 1월 10일(토) - 2월 1일(일), 화~금 11시, 주말 11시, 14시
+  where: 종로 아이들극장
+  description: 집채만큼 커진 일상의 사물들이 펼치는 환상 속 그 특별한 위트, 유쾌한 상상력!
+  bg-image: /assets/img/20251121-wide.jpg
+  link: /assets/img/20251121-full.jpg
+  long-image:
+  ticket:
+  ticket_text:
+- title: 미디어 상상놀이극 ‘거인의 책상’ 공연 
   when: 2025년 8월 1일(금) 11시, 2일(토) 11시, 14시
   where: 안양아트센터 수리홀
   description:
