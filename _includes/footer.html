@@ -6,7 +6,13 @@
   <div class="container">
     <div class="row" style="margin: 2rem 0;">
       <div class="col-md-9">
-        <p>Copyright © {{ site.time | date: '%Y' }} {{ site.title }}. All rights reserved. Since 2001</p>
+        <p>
+          Copyright © {{ site.time | date: '%Y' }} {{ site.title }}. All rights reserved. Since 2001
+          &nbsp;&nbsp;&nbsp;
+          <a class="pull-left" href="{{site.data.front.channels.instagram}}" target="_blank">
+            <img src="/assets/global/instagram.svg" alt="instagram" width="24" height="24" />
+          </a>
+        </p>
       </div>
       <div class="col-md-3">
         <ul class="list-inline pull-right edit-link">
